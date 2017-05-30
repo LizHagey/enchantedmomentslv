@@ -1,0 +1,1267 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 29, 2016, 12:13:39 PM
+    Author     : Liz
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    -moz-box-sizing: border-box;   
+    box-sizing: border-box; 
+  }
+  p, ul li{
+      font-size: 1vw;
+  }
+  h1 {
+      font-size: 2vw;
+  }
+  h3 {
+      font-size: 1.5vw;
+  }
+  html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  height:100%;
+  width:100%
+}
+header a img{
+    width: 20%;
+}
+@font-face {
+    font-family: Gabriola;
+    src: url(/fonts/Gabriola.ttf);
+}
+@font-face {
+    font-family: Edwardian Script ITC;
+    src: url(/fonts/ITCEDSCR.TTF);
+}
+@font-face {
+    font-family: ChopinScript;
+    src: url(/fonts/ChopinScript.otf);
+}
+body {
+    background: url(../images/greyBackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+.bodyBackground {
+    width: 80%;
+    height: auto;
+    background-color: rgba(255,255,255,.9);
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.10);
+    margin: 0 auto;
+    
+}
+/*Navigation*/
+#pageOneNav {
+    width: 100%;
+    margin-top: 5%;
+    background: #B2B0AD; 
+    background: linear-gradient(top, #B2B0AD 0%, #C9C6C0 100%);  
+    background: -moz-linear-gradient(top, #B2B0AD 0%, #C9C6C0 100%); 
+    background: -webkit-linear-gradient(top, #B2B0AD 0%,#C9C6C0 100%); 
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.25);
+    position: relative;
+    z-index: 9999;
+}
+nav {
+    width: 100%;
+    display: block;
+    margin: auto;
+    background: #B2B0AD; 
+    background: linear-gradient(top, #B2B0AD 0%, #C9C6C0 100%);  
+    background: -moz-linear-gradient(top, #B2B0AD 0%, #C9C6C0 100%); 
+    background: -webkit-linear-gradient(top, #B2B0AD 0%,#C9C6C0 100%); 
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.25);
+    position: relative;
+    z-index: 9999;
+}
+nav ul li:hover > ul {
+    display: block;
+}
+nav ul li{
+    padding: .5% 3%;
+    list-style: none;
+    position: relative;
+    display: inline-table;
+
+    float: left;
+}
+nav ul:after {
+    content: "";
+    clear:both;
+    display: block;
+}
+nav ul li:hover {
+      background: #3887C8;
+      background: linear-gradient(top, #3887C8 0%, #92CAEF 40%);
+      background: -moz-linear-gradient(top, #3887C8 0%, #92CAEF 40%);
+      background: -webkit-linear-gradient(top, #3887C8 0%,#92CAEF 40%)
+  }
+
+nav ul li a {
+    display: block;
+    padding: 10px 10px;
+    color: white !important;
+    text-decoration: none;
+    font-size: 1.4vw;
+}
+nav ul span img {
+    width: 3.5%;
+    margin-right: .75%;
+    padding: 5px 0px;
+}
+
+/*Header*/
+#pageOne #twinkling_stars {
+    width: 80%;
+/*    height: 18.5em;*/
+    display: block;
+    position: absolute;
+    top: 0px;
+}
+#twinkling_stars {
+    width: 80%;
+    display: block;
+    position: absolute;
+    top: 0px;
+}
+#headTitle {
+    width: 65%; 
+    text-align: center; 
+    color: white;
+    font-family: ChopinScript;
+/*    font-family: Edwardian Script ITC;*/
+/*    font-family: Gabriola;*/
+    font-size: 5vw;
+    text-shadow: 2px 2px rgba(0,0,0,0.25);
+    display: block;
+    position:relative;
+    top: 20px;
+    left: 18%;
+    z-index: 999;
+    margin-bottom: 5%;
+    font-weight: 500;
+}
+/*#headTitleImage {
+    width: 40%; 
+    text-align: center;
+    margin: auto;
+    display: block;
+    position:relative;
+    top: 20px;
+    z-index: 999;
+    margin-bottom: 0px;
+}*/
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+/*Carousel*/
+#carousel {
+    margin-top: 2%;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+}
+#myCarousel {
+      width:45%;
+      float: left;
+      margin: auto;
+      margin-top: 4%;
+      margin-left: 4%;
+      z-index: 999999;
+}
+#logo {
+    display: block;
+    width: 100%;
+    padding: 5%;
+    float: left;
+    padding-bottom: 6%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+#info {
+    width: 49%;
+    padding: 3%;
+    float: left;
+}
+#mainHead {
+    text-align: center;
+    padding-top: 3%;
+}
+#mainInfo {
+    text-align: center;
+}
+/*Middle line on home page*/
+#middleHead {
+    text-align: center; 
+    color: white;
+    font-family: Gabriola;
+    font-size: 3vw;
+    text-shadow: 2px 2px rgba(0,0,0,0.25);
+    background: #B2B0AD; 
+    background: linear-gradient(top, #B2B0AD 0%, #C9C6C0 100%);  
+    background: -moz-linear-gradient(top, #B2B0AD 0%, #C9C6C0 100%); 
+    background: -webkit-linear-gradient(top, #B2B0AD 0%,#C9C6C0 100%);
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.25);
+}
+/*Home page package links*/
+
+.figureHead a {
+    font-size: 3vw;
+    font-family: Gabriola;
+    color: gray;
+    width: 100%;
+    height: auto;
+    padding-left: 2%;
+    text-decoration: none;
+    background: white;
+}
+figure a img {
+    width: 100%;
+    padding: 0px;
+}
+figure {
+    width: 48%;
+    margin: 10px;
+    float: left;
+    display: block;
+    background-color: white;
+     height: auto;
+     box-shadow: 10px 5px 10px rgba(0,0,0, 0.30);
+    -webkit-box-shadow: 10px 5px 10px rgba(0,0,0, 0.30);
+    -moz-box-shadow: 10px 5px 10px rgba(0,0,0, 0.30);
+}
+figure a{
+    float: left;
+    clear: both;
+}
+figure figcaption {
+    padding-left: 1%;
+    font-size: 1.5vw;
+    color: gray;
+    background-color: white;
+    padding-bottom: 3%;
+}
+
+#middle{
+/*    background: #B2B0AD; 
+    background: linear-gradient(top, #B2B0AD 0%, #C9C6C0 100%);  
+    background: -moz-linear-gradient(top, #B2B0AD 0%, #C9C6C0 100%); 
+    background: -webkit-linear-gradient(top, #B2B0AD 0%,#C9C6C0 100%); 
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);*/
+    width: 100%;
+    display: block;
+    position: relative;
+    clear: both;
+}
+
+/*Packages Page*/
+
+.packageBoxTwo {
+    margin-bottom: 36%;
+}
+.packageBoxTwoTop {
+    margin-bottom: 24%;
+}
+.packagePictTwo {
+    width: 100%;
+    margin: 4% 0% 5% 0%;
+}
+.packagePictTwoTop {
+    width: 100%;
+    margin: 4% 0% 5% 0%;
+}
+.packagesTwo {
+    margin-top: -70%;
+    margin-left: 8%;
+    width: 55%;
+    position: relative;
+}
+.packagesTwoTop {
+    margin-top: -50%;
+    margin-left: 8%;
+    width: 45%;
+    position: relative;
+}
+/*Book Party Button*/
+.bookButtonTwo {
+    padding: 2%;
+    background: #B2B0AD; 
+    background: linear-gradient(top, #B2B0AD 0%, #C9C6C0 100%);  
+    background: -moz-linear-gradient(top, #B2B0AD 0%, #C9C6C0 100%); 
+    background: -webkit-linear-gradient(top, #B2B0AD 0%,#C9C6C0 100%);
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -4px 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -4px 2px rgba(0, 0, 0, .4);
+    -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -4px 2px rgba(0, 0, 0, .4);
+     border-radius: .3em;
+    -moz-border-radius: .3em;
+    -webkit-border-radius: .3em;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3vw;
+    border: .2vw solid white;
+    display: block;
+    clear: both;
+    width: 45%;
+    margin-top: 10%;
+}
+
+/*Package Headings*/
+.partyInfo {
+    font-family: Gabriola;
+    color: #B2B0AD;
+    text-align: center;
+    font-size: 4vw;
+    margin-bottom: -1.2em;
+    clear: both;
+}
+
+/*Party Information*/
+
+.packagesTwo h4 {
+    font-size: 1.3vw;
+    margin-bottom: .4em;
+}
+.packagesTwoTop h4 {
+    font-size: 1.3vw;
+    margin-bottom: .4em;
+}
+.packageList {
+    margin:5%;
+}
+#pageOneImg {
+    display: block;
+    width: 50%;
+    margin: 0px;
+    padding-top: 4%;
+    padding-right: 2%;
+    float: left;
+}
+
+#pageOnePict {
+    width: 100%;
+}
+#sub_page_heading {
+    text-align: center;
+    font-family: Gabriola;
+    font-size: 4vw;
+    padding: 1px;
+}
+/*About Me Page*/
+#mainImage {
+    padding: 2%;
+    float: left;
+    width: 45%;
+}
+#aboutMainImage {
+    padding: 2%;
+    float: left;
+    width: 45%;
+}
+.about {
+    text-align: left;
+}
+#aboutHead {
+    text-align: center;
+    margin-top: -16px;
+}
+#aboutInfo {
+    width: 49%;
+    padding: 3%;
+    float: left;
+}
+.aboutMeLogo {
+    width:25%;
+    display: block;
+    padding-top: 3%;
+    margin: auto;
+    padding-bottom: 2%;
+    border-bottom: .5px solid #B2B0AD;
+}
+/*Review Page*/
+#reviewPage {
+    width: 70%;
+    margin: auto;  
+}
+.reviewHead {
+    color: #B2B0AD;
+    padding-top: 4%;
+    border-bottom: 1px solid pink;
+}
+.review, .reviewSignature {
+    font-family: Gabriola;
+    color: gray;
+    font-size: 1.5vw;   
+}
+
+
+/*Princesses Page*/
+.princessSection {
+   width: 32%;
+    float: left;
+    padding: 2%;
+}
+.princesses {
+    width: 100%;
+    padding: 0;
+    margin-left: 5%;
+    float: left;
+}
+.princessesCaption {
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+.princesses img {
+    width: 100%;
+}
+figcaption {
+    font-size:3vw;
+}
+
+/*Footer*/
+#footer {
+    background-color: pink;
+    display: block;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+#disclaimer {
+    font-size: .8vw;
+    text-align: center;
+    padding: 1%;
+    text-decoration: none;
+ 
+}
+.location {
+    margin: auto;
+    text-align: center;
+    padding-bottom: .3%;
+}
+.location a {
+    color: black;
+}
+.copyright {
+    position: relative;
+    height: 100px;
+    padding-top: 2%;
+    list-style: none;
+    text-align: center;
+}
+
+#footerBar {
+    background: #B2B0AD; 
+    background: linear-gradient(top, #B2B0AD 0%, #C9C6C0 100%);  
+    background: -moz-linear-gradient(top, #B2B0AD 0%, #C9C6C0 100%); 
+    background: -webkit-linear-gradient(top, #B2B0AD 0%,#C9C6C0 100%); 
+
+    width: 100%;
+    height: 50px;
+    display: block;
+    position: relative;
+    clear: both;
+}
+#footerLogo {
+    width: 22%;
+    display: block;
+    margin: 0 auto;
+}
+
+/*contact page */
+#contactPage {
+    padding-left: 25%;
+}
+#contactPageLogo {
+    width: 40%;
+    display: block;
+    margin: auto;
+}
+form {
+    padding-left: 4%;
+    background-color: pink;
+    width: 60%;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.25);
+}
+form input, form textarea, form select, #cap_code {
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.25);
+}
+.checkbox {
+    padding: 0px;
+    margin: 0px;
+    width: 5%;
+}
+#action {
+    background-color: #B2B0AD;
+    background: linear-gradient(top, #B2B0AD 0%, #C9C6C0 100%);  
+    background: -moz-linear-gradient(top, #B2B0AD 0%, #C9C6C0 100%); 
+    background: -webkit-linear-gradient(top, #B2B0AD 0%,#C9C6C0 100%);
+    width: 100px;
+    height: 30px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -4px 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -4px 2px rgba(0, 0, 0, .4);
+    -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -4px 2px rgba(0, 0, 0, .4);
+}
+.errorMsg {
+    color: red;
+    font-size: 1.3vw;
+}
+.policies {
+    width: 80%;
+    margin: auto;
+}
+/*Tiny - max width 480px*/
+@media only screen and (max-width:30em){
+    .bodyBackground {
+        width: 100%;
+    }
+    #pageOne #twinkling_stars {
+        width: 105%;
+/*        height: 5em;*/
+        left: -5%;
+    }  
+    #twinkling_stars {
+        width: 105%;
+/*        height: 4.4em;*/
+        left: -5%;
+    }  
+    #headTitle {
+        top: 10px;
+    }
+    #pageOneNav {
+        margin-top: 7%;
+    }
+    #myCarousel {
+        width: 100%;
+        margin: auto;
+    }
+    nav {
+        margin-top: 2%;
+        position: relative;
+        z-index: 9999;
+    }
+    #pageOneNav ul li a {
+        font-size: 2.2em;
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+    nav ul li a {
+        font-size: 1.7em;
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+    #logo {
+        width: 100%;
+        float: left;
+        margin-left: 0px;
+        padding: 1% 30% 5% 30%;
+    }
+    #info {
+        margin: auto;
+        width: 100%;
+    }
+    #aboutInfo {
+        width: 90%;
+        margin: auto;
+    }
+    .about {
+        font-size: .5em;
+    }
+    #aboutHead {
+        font-size: .8em;
+    }
+    #aboutMainImage {
+        width: 100%;
+        margin: auto;
+    }
+    .aboutMeLogo {
+        width: 40%;
+    }
+    #carousel {
+        margin-top: 6%; 
+    }
+    #mainHead {
+        font-size: 1.1em;
+    }
+    #mainInfo {
+        font-size: .8em;
+    }
+     #middle {
+        margin-top: 8%;
+    }
+    #middleHead {
+        font-size: 2.5em;
+    }
+    .packagesTwo {
+        width: 40%;
+        margin-top: -75%;
+    }
+    .packagesTwoTop {
+        width: 35%;
+        margin-top: -52%;
+    }
+    .packagesTwo h4 {
+        font-size: .5em;
+    }
+    .packagesTwoTop h4 {
+        font-size: .45em;
+    }
+    .bookButtonTwo {
+        font-size: .5em;
+        text-align: center;
+        width: 60%;
+        margin-top: 2%;
+    }
+    figure {
+        width: 94%;
+    }
+    .figureHead a {
+        font-size: 5em;
+        padding-top: 2%;
+    }
+    .mainPageFigcaption {
+        font-size: 1.4em;
+    }
+    p, h4 {
+        font-size: .3em;
+    }
+    ul li {
+        font-size: .3em;
+    }
+    .bookButton {
+        font-size: .5em;
+        width: 50%;
+    }
+    #bookButtonLast {
+        font-size: .5em;
+        width: 50%;
+    }
+    #footerLogo {
+        width:50%;
+    }
+    #sub_page_heading {
+        font-size: 2em;
+    }
+    .princessSection {
+        width: 90%;
+    }
+    .princessesCaption {
+        font-size: 1em;
+    }
+    #disclaimer {
+        font-size: .5em;
+    }
+    .location {
+        font-size: .7em;
+    }
+    .copyright {
+        font-size: .7em;
+        padding-top: 3%;
+    }
+    #contactPage {
+    padding-left: 2%;
+    }
+    form {
+        padding-left: 4%;
+        background-color: pink;
+        width: 90%;
+    }
+     #contactPage {
+       padding-left: 2%;
+        padding-top: 3%;
+    }
+    #contactPage h1 {
+        font-size: 1.2em;
+    }
+    #contactPage p {
+        font-size: .55em;
+    }
+    form {
+        padding-left: 5%;
+        background-color: pink;
+        width: 90%;
+    }
+    form input {
+        width: 90%;
+    }
+    form textarea {
+        width: 90%;
+    }
+    .errorMsg {
+        font-size: 1em;
+    }
+    #reviewPage {
+        width: 90%;
+    }
+    .reviewHead {
+        font-size: 1em;
+    }
+    .review, .reviewSignature {
+        font-size: 1em;
+    }
+}
+
+
+
+/*Narrow 481 - 640px*/
+@media only screen and (min-device-width: 30.063em) and (max-device-width: 40em){
+    .bodyBackground {
+        width: 90%;
+    }
+    #pageOne #twinkling_stars {
+/*        height: 6.5em;*/
+        width: 90%;
+    }
+    #twinkling_stars {
+        width: 90%;
+/*        height: 6em;*/
+        left: 5%;
+    }  
+    #headTitle {
+        top: 10px;
+    }
+    #pageOneNav {
+        margin-top: 3.5%;
+    }
+    nav {
+        margin-top: 2%;
+        position: relative;
+        z-index: 9999;
+    }
+    nav ul li a {
+        font-size: 1.8em;
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+    #myCarousel {
+        width: 100%;
+        margin: auto;
+    }
+    #logo {
+        width: 100%;
+        float: left;
+        margin-left: 0px;
+        padding: 1% 30% 5% 30%;
+    }
+    #info {
+        margin: auto;
+        width: 100%;
+    }
+    #aboutInfo {
+        width: 55%;
+    }
+    .aboutMeLogo {
+        width: 40%;
+    }
+    .about {
+        font-size: .5em;
+    }
+    #carousel {
+        margin-top: 6%; 
+    }
+    #mainHead {
+        font-size: 2em;
+    }
+    #mainInfo {
+        font-size: 1.3em;
+    }
+     #middle {
+        margin-top: 8%;
+    }
+    #middleHead {
+        font-size: 2.5em;
+    }
+    #mainImage {
+        padding-top: 10%;
+    }
+    
+    figure {
+        width: 94%;
+    }
+    .figureHead a {
+        font-size: 3.5em;
+        color: gray;
+    }
+    .mainPageFigcaption {
+        font-size: 2em;
+    }
+  .packagesTwo {
+        width: 40%;
+        margin-top: -75%;
+    }
+    .packagesTwoTop {
+        width: 33%;
+        margin-top: -52%;
+    }
+    .packagesTwo h4 {
+        font-size: 1em;
+    }
+    .packagesTwoTop h4 {
+        font-size: .8em;
+    }
+    .bookButtonTwo {
+        font-size: .8em;
+        text-align: center;
+        width: 60%;
+        margin-top: 2%;
+    }
+    .packagesTwo {
+        font-size: .8em;
+        overflow: auto;
+    }
+    .packagesTwoTop {
+        font-size: .9em;
+        overflow: auto;
+    }
+    .packagesTwo p, .packagesTwo ul li {
+        font-size: .7em;
+    }
+     .packagesTwoTop p, .packagesTwoTop ul li {
+        font-size: .6em;
+    }
+     .partyInfo {
+        font-size: 1.8em;
+        margin-bottom: -1em;
+    }
+   .princessSection {
+        width: 80%;
+    }
+    .princessesCaption {
+        font-size: 1em;
+    }
+    .location {
+        font-size: .8em;
+    }
+    .copyright {
+        font-size: .8em;
+        padding-top: 3%;
+    }
+     #disclaimer {
+        font-size: .7em;
+    }
+    #contactPage {
+       padding-left: 10%;
+        padding-top: 2%;
+    }
+    #contactPage h1 {
+        font-size: 1.6em;
+    }
+    #contactPage p {
+        font-size: 1em;
+    }
+    form {
+        padding-left: 10%;
+        background-color: pink;
+        width: 90%;
+    }
+    form input {
+        width: 80%;
+    }
+    form textarea {
+        width: 80%;
+    }
+    #reviewPage {
+        width: 80%;
+    }
+    .reviewHead {
+        font-size: 1em;
+    }
+    .review, .reviewSignature {
+        font-size: 1em;
+    }
+}
+/*641 - 768px*/
+@media only screen and (min-device-width: 40.063em) and (max-device-width: 48em) {
+/*    #twinkling_stars {
+        height: 8em;
+    } 
+    #pageOne #twinkling_stars {
+        height: 7.5em;
+    }*/
+    #headTitle {
+        top: 10px;
+    }
+    #pageOneNav {
+        margin-top: 3%;
+    }
+    nav {
+        margin-top: 2%;
+        position: relative;
+        z-index: 9999;
+    }
+    nav ul li a {
+        font-size: 1.8em;
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+    #logo {
+        padding-top: 0px;
+        margin-top: 0;
+    }
+    #carousel {
+        margin-top: 6%;
+    }
+    #mainImage {
+        padding-top: 5%;
+    }
+    #mainHead {
+        font-size: 1.1em;
+    }
+    #mainInfo {
+        font-size: .9em;
+    }
+    #info {
+        width: 40%;
+    }
+    #aboutInfo {
+        width: 55%;
+    }
+    .about {
+        font-size: .7em;
+    }
+    .aboutMeLogo {
+        width: 40%;
+    }
+    figure {
+        width: 46%;
+    }
+    .figureHead a {
+        font-size: 1.5em;
+        color: gray;
+        padding-top: 2%;
+    }
+    .packagesTwo {
+        width: 40%;
+        margin-top: -75%;
+    }
+    .packagesTwoTop {
+        width: 33%;
+        margin-top: -52%;
+    }
+    .packagesTwo h4 {
+        font-size: 1em;
+    }
+    .packagesTwoTop h4 {
+        font-size: .8em;
+    }
+    .bookButtonTwo {
+        font-size: 1em;
+        text-align: center;
+        width: 60%;
+        
+    }
+    .packagesTwo {
+        font-size: .8em;
+        overflow: auto;
+    }
+    .packagesTwoTop {
+        font-size: .9em;
+        overflow: auto;
+    }
+    .packagesTwo p, .packagesTwo ul li {
+        font-size: .7em;
+    }
+     .packagesTwoTop p, .packagesTwoTop ul li {
+        font-size: .6em;
+    }
+     .partyInfo {
+        font-size: 1.8em;
+        
+    }
+    .princessSection {
+        width: 47%;
+    }
+    .princessesCaption {
+        font-size: 1.5em;
+    }
+    .location {
+        font-size: .7em;
+    }
+    .copyright {
+        font-size: .7em;
+        padding-top: 3%;
+    }
+     #disclaimer {
+        font-size: .7em;
+    }
+    #contactPage {
+       padding-left: 10%;
+        padding-top: 2%;
+    }
+    #contactPage h1 {
+        font-size: 1.8em;
+    }
+    #contactPage p {
+        font-size: 1em;
+    }
+    form {
+        padding-left: 10%;
+        background-color: pink;
+        width: 90%;
+    }
+    form input {
+        width: 80%;
+    }
+    form textarea {
+        width: 80%;
+    }
+    #reviewPage {
+        width: 80%;
+    }
+    .reviewHead {
+        font-size: 1em;
+    }
+    .review, .reviewSignature {
+        font-size: 1em;
+    }
+}
+/*769 - 1025px*/
+@media only screen and (min-device-width: 48.063em) and (max-device-width: 64.063em) {
+/*    #twinkling_stars {
+        height: 9em;
+    }  
+    #pageOne #twinkling_stars {
+        height: 10em;
+    }*/
+    #headTitle {
+        top: 10px;
+    }
+    nav {
+        margin-top: 2%;
+        position: relative;
+        z-index: 9999;
+    }
+    nav ul li a {
+        font-size: 1.8em;
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+    #mainImage {
+        padding-top: 3%;
+    }
+    #mainHead {
+        font-size: 1.2em;
+    }
+    #mainInfo {
+        font-size: 1em;
+    }
+    #info {
+        width: 45%;
+        margin-right: -5%;
+    }
+    figure {
+        width: 46%;
+    }
+    .figureHead a {
+        font-size: 1.8em;
+        color: gray;
+        padding-top: 2%;
+    }
+    .packagesTwo {
+        width: 40%;
+        margin-top: -75%;
+    }
+    .packagesTwoTop {
+        width: 33%;
+        margin-top: -52%;
+    }
+    .packagesTwo h4 {
+        font-size: 1em;
+    }
+    .packagesTwoTop h4 {
+        font-size: 1em;
+    }
+    .bookButtonTwo {
+        font-size: 1em;
+        text-align: center;
+        width: 60%;
+        
+    }
+    .packagesTwo {
+        font-size: 1em;
+        overflow: auto;
+    }
+    .packagesTwoTop {
+        font-size: 1em;
+    }
+    .packagesTwo p, .packagesTwo ul li {
+        font-size: .7em;
+    }
+     .packagesTwoTop p, .packagesTwoTop ul li {
+        font-size: .6em;
+    }
+     .partyInfo {
+        font-size: 2.8em;
+        margin-bottom: -.5em;
+    }
+    .location {
+        font-size: .7em;
+    }
+    .copyright {
+        font-size: .7em;
+        padding-top: 3%;
+    }
+     #disclaimer {
+        font-size: .7em;
+    }
+    #contactPage {
+       padding-left: 10%;
+        padding-top: 2%;
+    }
+    #contactPage h1 {
+        font-size: 1.8em;
+    }
+    #contactPage p {
+        font-size: 1em;
+    }
+    form {
+        padding-left: 10%;
+        background-color: pink;
+        width: 90%;
+    }
+    form input {
+        width: 80%;
+    }
+    form textarea {
+        width: 80%;
+    }
+    #reviewPage {
+        width: 80%;
+    }
+    .reviewHead {
+        font-size: 1.3em;
+    }
+    .review, .reviewSignature {
+        font-size: 1.1em;
+    }
+    .aboutMeLogo {
+        width: 40%;
+    }
+}
+
+/*Medium 1026 - 1120px*/
+@media only screen and (min-width:64.125em) and (max-width:70em){
+/*    #twinkling_stars {
+        height: 14.5em;
+    }  
+    #pageOne #twinkling_stars {
+        height: 11.5em;
+    }*/
+   nav {
+        margin-top: 2%;
+    }
+    #info {
+        margin-right: 2%;
+    }
+    figure {
+        width: 46%;
+    }
+    .figureHead a {
+        padding-top: 2%;
+        font-size: 1.5em;
+    }
+    .behindPackages {
+        height: 20em;
+    }
+    .reviewHead {
+        font-size: 1.3em;
+    }
+    .review, .reviewSignature {
+        font-size: 1.1em;
+    }
+    
+}
+/*1121 - 1248px*/
+@media only screen and (min-width:70.063em) and (max-width:78em){
+/*    #twinkling_stars {
+        height: 12em;
+    }  
+    #pageOne #twinkling_stars {
+        height: 12em;
+    }*/
+    nav {
+        margin-top: 2%;
+    }
+    .behindPackages {
+        height: 22em;
+    }
+    figure {
+        width: 46%;
+    }
+    .figureHead a {
+        font-size: 1.5em;
+    }
+
+}
+/*1249px - 1600px*/
+@media only screen and (min-width:78.063em) and (max-width:100em){
+/*    #twinkling_stars {
+        height: 13.5em;
+    }  
+    #pageOne #twinkling_stars {
+        height: 14.5em;
+    }*/
+    nav {
+        margin-top: 2%;
+    }
+}
+
+/*Wide* 1601 px*/
+@media only screen and (min-width:100.063em){
+/*    #twinkling_stars {
+        height: 16.5em;
+    }  
+    #pageOne #twinkling_stars {
+        height: 15.5em;
+    }*/
+    #pageOneNav {
+        margin-top: 0;
+    }
+    nav {
+        margin-top: 2%;
+    }
+     #behindPackagesTwoTop {
+        height: 34em;
+    }
+    .behindPackagesTwo {
+        height: 52em;
+    }
+    .packages {
+        font-size: .8em;
+        height: 52em;
+        overflow: auto;
+    }
+}
+
